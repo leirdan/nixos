@@ -9,7 +9,7 @@
     };
   };
 
-  outputs = { nixpkgs, home-manager, ... }:
+  outputs = { nixpkgs, home-manager, ... }@inputs:
     let 
       lib = nixpkgs.lib;
       system = "x86_64-linux";
@@ -18,7 +18,10 @@
       homeConfigurations = { 
         leirdan = home-manager.lib.homeManagerConfiguration { 
           inherit pkgs;
-          modules = [ ./home.nix ./shell.nix ];
+          modules = [ ./home ./shell.nix ];
+          extraSpecialArgs = { 
+            inherit inputs;
+          };
         };
       };
     };
