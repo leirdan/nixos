@@ -1,5 +1,6 @@
 { ... }:
 {
-  ./programs.nix
-  ./packages.nix
+  imports = [ 
+    ./programs.nix ./packages.nix
+  ];
 }

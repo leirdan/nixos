@@ -4,7 +4,7 @@
     enable = true;
     wlr.enable = true;
     xdgOpenUsePortal = true;
-    extraPortals = with pgks; [ xdg-desktop-portal-hyprland xdg-desktop-portal-gtk ];
+    extraPortals = with pkgs; [ xdg-desktop-portal-hyprland xdg-desktop-portal-gtk ];
   };
 
   programs = { 
