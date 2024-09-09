@@ -8,7 +8,8 @@
     shellAliases = { 
       hg = "history | grep";
       ".." = "cd ..";
-      buildnix = "sudo nixos-rebuild switch -I nixos-config=/home/leirdan/.config/home-manager/system/configuration.nix";
+      nixswitch = "sudo nixos-rebuild switch -I nixos-config=/home/leirdan/.config/home-manager/system/configuration.nix";
+      homeswitch = "home-manager switch";
     };
   };  
 } 
