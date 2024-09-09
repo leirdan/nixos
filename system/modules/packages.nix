@@ -33,6 +33,7 @@
     wayland-utils 
     wlroots
     wl-clipboard
+    wofi
     
     # Languages
     gcc
