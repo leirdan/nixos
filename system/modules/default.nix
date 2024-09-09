@@ -1,6 +1,6 @@
 { ... }:
 {
   imports = [ 
-    ./programs.nix ./packages.nix
+    ./programs.nix ./packages.nix ./sound.nix
   ];
 }

@@ -8,11 +8,34 @@
     wget
     git 
     home-manager
-    gcc
     gnumake
     kitty
+    firefox
+    meson
+    blueman
+    pavucontrol
+    pipewire
+    dunst
+    networkmanagerapplet
 
     # Hyprland-related packages 
     hyprpaper 
+    gtk3
+    gtk4
+    anyrun
+    fastfetch
+    swww
+    xwayland
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-hyprland
+    waybar
+    wayland-protocols
+    wayland-utils 
+    wlroots
+    wl-clipboard
+    
+    # Languages
+    gcc
+    rustup
   ];
 }
