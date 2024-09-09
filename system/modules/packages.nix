@@ -1,5 +1,7 @@
 { config, pkgs, ... }: 
 {
+  nixpkgs.config.allowUnfree = true;
+
   environment.systemPackages = with pkgs; [ 
     # General packages
     vim
@@ -8,7 +10,9 @@
     home-manager
     gcc
     gnumake
+    kitty
 
-    # Hyprland packages 
+    # Hyprland-related packages 
+    hyprpaper 
   ];
 }

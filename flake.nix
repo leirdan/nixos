@@ -18,7 +18,7 @@
       homeConfigurations = { 
         leirdan = home-manager.lib.homeManagerConfiguration { 
           inherit pkgs;
-          modules = [ ./home ./shell.nix ];
+          modules = [ ./home ];
           extraSpecialArgs = { 
             inherit inputs;
           };
