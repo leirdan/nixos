@@ -1,4 +1,4 @@
-{ config, pkgs, ... }: 
+{ config, pkgs, lib, ... }: 
 {
   nixpkgs.config.allowUnfree = true;
 
@@ -17,7 +17,7 @@
     pipewire
     dunst
     networkmanagerapplet
-
+ 
     # Hyprland-related packages 
     hyprpaper 
     gtk3
@@ -38,5 +38,6 @@
     # Languages
     gcc
     rustup
+    nodejs
   ];
 }
